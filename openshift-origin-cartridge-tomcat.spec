@@ -1,12 +1,12 @@
-%global cartridgedir %{_libexecdir}/openshift/cartridges/tomcat
+%global cartridgedir %{_libexecdir}/openshift/cartridges/egovOpenPaasTomcat
 
 Summary:       Provides Tomcat7.0 support
-Name:          openshift-origin-cartridge-tomcat
+Name:          openshift-origin-cartridge-egovOpenPaasTomcat
 Version: 1.17.1.4
 Release:       1%{?dist}
 Group:         Development/Languages
 License:       ASL 2.0
-URL:           http://www.openshift.com
+URL:           http://openpaas.cloudsc.kr
 Source0:       http://mirror.openshift.com/pub/openshift-origin/source/%{name}/%{name}-%{version}.tar.gz
 Requires:      facter
 Requires:      rubygem(openshift-origin-node)
@@ -23,11 +23,11 @@ Requires:      maven
 BuildRequires: jpackage-utils
 BuildArch:     noarch
 
-Obsoletes: openshift-origin-cartridge-tomcat-1.0
-Obsoletes: openshift-origin-cartridge-tomcat-2.0
+Obsoletes: openshift-origin-cartridge-egovOpenPaasTomcat-1.0
+Obsoletes: openshift-origin-cartridge-egovOpenPaasTomcat-2.0
 
 %description
-Provides Tomcat1.0 and Tomcat7.0 support to OpenShift. (Cartridge Format V2)
+Provides egovOpenPaasTomcat1.0 and egovOpenPaasTomcat7.0 support to OpenShift. (Cartridge Format V2)
 
 %prep
 %setup -q
