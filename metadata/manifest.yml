@@ -5,7 +5,7 @@ Cartridge-Vendor: jyes
 Cartridge-Version: 0.0.1
 Compatible-Versions: []
 Display-Name: egovOpenPaasTomcat 7
-Description: Tomcat Enterprise Web Server is the enterprise-class Java web container
+Description: egovOpenPaasTomcat Enterprise Web Server is the enterprise-class Java web container
   for large-scale lightweight web applications based on Tomcat 7. Build and deploy
   JSPs and Servlets in the cloud.
 Version: '7.0'
