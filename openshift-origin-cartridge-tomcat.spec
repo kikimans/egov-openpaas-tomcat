@@ -1,7 +1,7 @@
-%global cartridgedir %{_libexecdir}/openshift/cartridges/egovOpenPaasTomcat
+%global cartridgedir %{_libexecdir}/openshift/cartridges/Tomcat
 
 Summary:       Provides Tomcat7.0 support
-Name:          openshift-origin-cartridge-egovOpenPaasTomcat
+Name:          openshift-origin-cartridge-Tomcat
 Version: 1.17.1.7
 Release:       1%{?dist}
 Group:         Development/Languages
@@ -23,11 +23,11 @@ Requires:      maven
 BuildRequires: jpackage-utils
 BuildArch:     noarch
 
-Obsoletes: openshift-origin-cartridge-egovOpenPaasTomcat-1.0
-Obsoletes: openshift-origin-cartridge-egovOpenPaasTomcat-2.0
+Obsoletes: openshift-origin-cartridge-Tomcat-1.0
+Obsoletes: openshift-origin-cartridge-Tomcat-2.0
 
 %description
-Provides egovOpenPaasTomcat1.0 and egovOpenPaasTomcat7.0 support to OpenShift. (Cartridge Format V2)
+Provides Tomcat1.0 and Tomcat7.0 support to OpenShift. (Cartridge Format V2)
 
 %prep
 %setup -q
