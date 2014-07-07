@@ -1,12 +1,12 @@
-%global cartridgedir %{_libexecdir}/openshift/cartridges/Tomcat
+%global cartridgedir %{_libexecdir}/openshift/cartridges/tomcat
 
 Summary:       Provides Tomcat7.0 support
-Name:          openshift-origin-cartridge-Tomcat
-Version: 1.17.1.7
+Name:          openshift-origin-cartridge-tomcat
+Version: 1.17.1.4
 Release:       1%{?dist}
 Group:         Development/Languages
 License:       ASL 2.0
-URL:           http://openpaas.cloudsc.kr
+URL:           http://www.openshift.com
 Source0:       http://mirror.openshift.com/pub/openshift-origin/source/%{name}/%{name}-%{version}.tar.gz
 Requires:      facter
 Requires:      rubygem(openshift-origin-node)
@@ -23,8 +23,8 @@ Requires:      maven
 BuildRequires: jpackage-utils
 BuildArch:     noarch
 
-Obsoletes: openshift-origin-cartridge-Tomcat-1.0
-Obsoletes: openshift-origin-cartridge-Tomcat-2.0
+Obsoletes: openshift-origin-cartridge-tomcat-1.0
+Obsoletes: openshift-origin-cartridge-tomcat-2.0
 
 %description
 Provides Tomcat1.0 and Tomcat7.0 support to OpenShift. (Cartridge Format V2)
@@ -432,4 +432,3 @@ alternatives --set tomcat-2.0 /usr/share/tomcat7
 
 * Tue Mar 19 2013 Dan Mace <ironcladlou@gmail.com> 0.1.0-1
 - new package built with tito
-
